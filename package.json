@@ -1,0 +1,27 @@
+{
+  "name": "cambur-color-picker",
+  "description": "Webcomponent cambur-color-picker following open-wc recommendations",
+  "license": "MIT",
+  "author": "cambur-color-picker",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "build": "vite build",
+    "dev": "vite",
+    "serve": "vite preview",
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"web-dev-server\""
+  },
+  "dependencies": {
+    "lit": "^3.1.4"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.3",
+    "@web/dev-server": "^0.4.6",
+    "concurrently": "^8.2.2",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.5"
+  },
+  "customElements": "custom-elements.json"
+}
