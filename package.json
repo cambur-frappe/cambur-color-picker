@@ -8,7 +8,7 @@
   "scripts": {
     "analyze": "cem analyze --litelement",
     "build": "vite build",
-    "dev": "vite",
+    "dev": "vite build --watch & vite preview",
     "serve": "vite preview",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"web-dev-server\""
   },
@@ -19,7 +19,9 @@
     "@custom-elements-manifest/analyzer": "^0.10.3",
     "@web/dev-server": "^0.4.6",
     "concurrently": "^8.2.2",
+    "tailwindcss": "^3.4.7",
     "tslib": "^2.6.3",
+    "twlit": "^0.0.1-alpha.37",
     "typescript": "^5.5.3",
     "vite": "^5.3.5"
   },
